@@ -18,3 +18,17 @@ asciidoctor:
     idseparator: '-'
     sectanchors: ''
     icons: font
+profiles:
+  development:
+    deploy: nil 
+  production:
+    base_url: http://dsampy.github.io/tester-workbench-site
+    ctx_path: /tester-workbench-site
+    asciidoctor:
+      :attributes:
+        base_url: http://dsampy.github.io/tester-workbench-site
+        ctx_path: /tester-workbench-site
+        imagesdir: http://dsampy.github.io/tester-workbench-site/images 
+    deploy:
+      host: github_pages
+      branch: gh-pages
